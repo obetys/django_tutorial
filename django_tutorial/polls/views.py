@@ -1,5 +1,8 @@
-
+from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("<h1>Привет! с вами говорит Джанго-релизнутый</h1>")
+    return render(request, "index.html")
+
+def vsem_privet(request):
+    return HttpResponse("всем привет")

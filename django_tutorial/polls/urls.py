@@ -1,8 +1,7 @@
-from django_urls import path
-from . import viems
-
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('', viems.index, name="index"),
-    path('vsem_privet', viems.vsem_privet, name="vsem_privet")
+    path('', views.index, name="index"),
+    path('vsem_privet', views.vsem_privet, name="vsem_privet")
 ]
